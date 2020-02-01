@@ -1,0 +1,11 @@
+server:
+  port: 8080
+mybatis:
+  config-location: classpath:mybatis-config
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zixuan.domain
+spring:
+  datasource:
+    username: root
+    password: 12345678
+    url: jdbc:mysql://127.0.0.1:3306/miln_server

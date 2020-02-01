@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="miln-web" />
+        <module name="zixuan-common" />
+        <module name="miln-base" />
+        <module name="miln-dao" />
+        <module name="miln-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ok" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="miln-base" options="-parameters" />
+      <module name="miln-dao" options="-parameters" />
+      <module name="miln-service" options="-parameters" />
+      <module name="miln-web" options="-parameters" />
+      <module name="zixuan-common" options="-parameters" />
+    </option>
+  </component>
+</project>

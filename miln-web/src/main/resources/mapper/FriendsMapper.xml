@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zixuan.dao.FriendsDao">
+    <select id="findFriendsByUserId" parameterType="String" resultType="com.zixuan.domain.FriendModel">
+		select *,u.user_name as friendName from user u join friends f on u.user_id = f.user_id where u.user_id=#{id}
+	</select>
+
+
+</mapper>
